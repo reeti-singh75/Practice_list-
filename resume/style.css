@@ -1,0 +1,264 @@
+Basic Reset and Global Styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings and Separators */
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Separator line for main headings */
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 5px 0;
+    font-size: 13px;
+}
+li {
+    margin-bottom: 3px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.profile-text {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.profile-image-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px; /* Adjust spacing */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 5px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Summary Section */
+.summary {
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.summary p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    padding-top: 15px;
+}
+
+.left-column {
+    flex: 3; /* e.g., 30% width */
+    padding-right: 15px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.right-column {
+    flex: 7; /* e.g., 70% width */
+    padding-left: 15px;
+}
+
+/* Section Entries (Education, Experience, Projects) */
+.education, .skills, .certifications, .experience, .projects {
+    margin-bottom: 20px;
+}
+
+.entry {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.entry h3 {
+    margin-bottom: 0;
+}
+
+.organization {
+    font-style: italic;
+    color: #555;
+    margin-top: 2px;
+}
+
+.dates {
+    float: right;
+    font-weight: normal;
+    color: #555;
+}
+
+.entry h3, .organization {
+    display: inline;
+}
+
+.entry .details {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.cert-title {
+    font-weight: bold;
+}
+
+/* Experience Lists - Two Columns */
+.two-column-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-column-list ul {
+    flex-basis: 48%; /* Adjust for spacing */
+    padding-left: 15px;
+    list-style-type: square;
+}
+
+/* Media Query for Responsiveness (Tablet and Mobile View) */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info {
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    .profile-image-wrapper {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+    
+    .social-links a:first-child {
+        margin-left: 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        flex: none;
+        width: 100%;
+        padding: 0;
+        border-right: none;
+    }
+    
+    .left-column {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .right-column {
+        padding-top: 15px;
+    }
+
+    .two-column-list {
+        flex-direction: column;
+    }
+    
+    .two-column-list ul {
+        flex-basis: 100%;
+    }
+}
